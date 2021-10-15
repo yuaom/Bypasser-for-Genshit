@@ -8,11 +8,11 @@ Use it wisely :) ❤
 idk if this can get you ban, stay safe travaller ! 🦺
 
 Ways to use : 
-1. Turn Off Real Time Anti Virus / Any Other Anti Virus              [+If you didn't turn off might affact to get an error.]
-2. Open Genshin and load into the game/world Completely 
-3. Run As Administrator
-4. Wait the program do its thing 
-5. Done and you can inject any cheat you like to use...
+1. Turn Off Real Time Anti Virus / Any Other Anti Virus -> If you didn't turn it off, might get error for futher process...
+2. Open Genshin and load into the game/world Completely -> wait until you are in the world
+3. Run As Administrator -> Right click the program, run it as administrator
+4. Wait the program do its thing -> wait until the program pop up "BYPASSED"
+5. Done and you can inject any cheat you like to use... -> Finnish
 
 
 credit to Desire.pro (FUCK#9803) 👍
