@@ -8,8 +8,7 @@ Use it wisely :) ❤
 idk if this can get you ban, stay safe travaller ! 🦺
 
 Ways to use : 
-1. Turn Off Real Time Anti Virus / Any Other Anti Virus 
-    [+If you didn't turn off might affact to get an error.]
+1. Turn Off Real Time Anti Virus / Any Other Anti Virus              [+If you didn't turn off might affact to get an error.]
 2. Open Genshin and load into the game/world Completely 
 3. Run As Administrator
 4. Wait the program do its thing 
