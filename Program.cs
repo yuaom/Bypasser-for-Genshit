@@ -193,10 +193,11 @@ namespace GenshinPublic
                 }
                 catch
                 {
-                    Process.Start("Clear_Temp.bat");
+                    File.Delete(Path.Combine(Path.GetTempPath(), "Bypass.exe"));
+                    Enviroment.Exit(1);
+                    //Process.Start("Clear_Temp.bat");
                 }
             }
         }
-        //credit to DesirePro(FUCK#9803)
     }
 }
