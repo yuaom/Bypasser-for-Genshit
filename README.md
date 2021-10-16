@@ -47,8 +47,9 @@ Ways to use :
 
 
 
-Virustotal result ▶ [https://www.virustotal.com/gui/file/35d7ef85bfaef7cfa45cc8dc7bc803cf822fa5a828ac0215eeec22ca6dc743fc?nocache=1]
+Virustotal result ▶ https://www.virustotal.com/gui/file/43f7e5accacbe9d4a067910650f23f6b4d5e7820f784cfc5c6f57eb7bc4ca9b9?nocache=1
 
-![image](https://user-images.githubusercontent.com/76231245/137549373-d40f1bbc-3936-49d0-afa9-99fcf1c6be29.png)
+![image](https://user-images.githubusercontent.com/76231245/137600891-f98c5dcc-b4ee-4803-bc26-3b3af356893a.png)
+
 
 Have Fun ❤🐱‍👤
