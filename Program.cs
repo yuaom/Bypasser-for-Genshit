@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.CodeDom.Compiler;
 using System.Data;
 using System.Diagnostics;
@@ -25,7 +25,12 @@ namespace GenshinPublic
                 }
                 else
                 {
-                    Console.WriteLine("Could Not Download File, check your Anti Virus!");
+                    string msg_1 = "Turn Off Other Anti Virus";
+                    string msg_2 = "Bitdefender, Avast, Windows's Anti Virus";
+                    Console.WriteLine("Please Turn Off Anti-Virus");
+                    Console.WriteLine("");
+                    Console.WriteLine("Check If These Are Active -");
+                    Console.WriteLine(msg_1 + msg_2);
                     Console.ReadKey();
                 }
                 if (Program)
@@ -35,21 +40,26 @@ namespace GenshinPublic
             }
             catch (WebException)
             {
-                Console.WriteLine("Please Check Your Internet Connection");
-                Console.ReadKey();
+                Console.WriteLine("No Internet Connection Detected, Please Try Again...");
+                Console.Beep();
+                Thread.Sleep(100);
             }
             catch (Exception arg)
             {
-                Console.WriteLine("Error! " + arg);
+                Console.WriteLine("Oops Somehing Went Wrong!" + arg);
             }
         }
         private static void RandomName()
         {
             Console.Title = "";
             Random rnd = new Random();
-            Char[] pwdChars = new Char[36] { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
-            for (int i = 35; i < 75; i++)
-                Console.Title += pwdChars[rnd.Next(0, 35)];
+            Char[] pwdChars = new Char[62]
+            {   'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
+                'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z',
+                '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'
+            };
+            for (int r = 35; r < 75; r++)
+                Console.Title += pwdChars[rnd.Next(0, 60)];
             Thread.Sleep(10);
         }
         const string Chars = "awdauUWHU2Dw722322tyuawDawwGG3hwd";
@@ -60,7 +70,7 @@ namespace GenshinPublic
         }
         [STAThread]
         [DebuggerNonUserCode]
-        [GeneratedCode("PresentationBuildTasks", "1.0.0.0")]
+        [GeneratedCode("PresentationBuildTasks", "1.2.0.0")]
         public static void Main(string[] args)
         {
             RandomName();
@@ -71,6 +81,9 @@ namespace GenshinPublic
                 Console.WriteLine("Closing Mhyprot2... Wait....");
                 Console.Clear();
                 Console.WriteLine("Bypassed");
+                Console.Beep();
+                Console.WriteLine();
+                Console.WriteLine();
                 Console.WriteLine();
                 Console.WriteLine("credit to DesirePro(FUCK#9803)");
                 Console.WriteLine("Made By Dwaine#0572");
@@ -81,22 +94,49 @@ namespace GenshinPublic
 
             if (Process.GetProcessesByName("GenshinImpact").Length == 0)
             {
-                int smollpp = 0;
-                while (smollpp < 5)
+                int i = 0;
+                while (i < 5)
                 {
                     RandomName();
-                    smollpp++;
+                    i++;
                 }
                 using (Process process = Process.Start("C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Genshin Impact\\Genshin Impact.lnk"))
                 {
                     process.WaitForInputIdle();
-                    Console.WriteLine("PID Launcher.exe : " + process.Id);
-                    Process[] p = Process.GetProcessesByName("GenshinImpact");
-                    Console.WriteLine("PID Genshin Impact.exe : " + p);
+                    Console.WriteLine("Launcher.exe PID : " + process.Id);
+                    Process[] processCollection = Process.GetProcesses();
+                    Console.WriteLine("Wait While The Program Is Listening To Process");
+                    Console.WriteLine();
+                    foreach (Process p in processCollection)
+                    {
+                        Console.WriteLine(p.ProcessName);
+
+                    }
+                    string[] sentences =
+                    {
+                        "Genshin Impact",
+                        "GenshinImpact",
+                        "Genshin Impact.exe",
+                        "GenshinImpact.exe"
+                    };
+                    foreach (string s in sentences)
+                    {
+                        if (Process.GetProcessesByName("GenshinImpact").Length != 0)
+                        {
+                           
+                            Console.WriteLine("Process Found...");
+                        }
+                        else
+                        {
+                    
+                            Console.WriteLine("Process Not Found...");
+                        }
+                    }
                 }
             }
 
             RandomName();
+            Console.WriteLine();
             Console.WriteLine("Cannot Bypass...");
             Console.WriteLine("Open Genshin Impact");
             Console.Beep();
@@ -104,7 +144,16 @@ namespace GenshinPublic
             Console.WriteLine("Reopen This Bypasser");
             Console.WriteLine();
             Console.WriteLine();
+            Console.Clear();
+            Console.WriteLine("Wait While The Program Is Listening To Process");
+            Console.WriteLine("Opened Luncher For You...");
             Console.WriteLine();
+            Console.WriteLine("Load The Game Completely and Open This Bypasser");
+            Console.WriteLine("Beep Sound = Succesfully Bypassed");
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine("Process ID Of Genshin Impact Cannot Found... ");
+            Thread.Sleep(10);
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine("credit to DesirePro(FUCK#9803)");
@@ -112,15 +161,15 @@ namespace GenshinPublic
             Console.WriteLine();
             Thread.Sleep(10000);
             Console.Clear();
-            for (int i = 0; i < 15; i++)
+
+
+
+            for (int a = 5; a >= 0; a--)
             {
-                string bigpp = "Closing The Program Now";
-                string smolp = "Reopen This Bypasser After You Completely Enterd World";
-                Console.WriteLine(bigpp + smolp);
-                Console.WriteLine("Loading...");
+                Console.Write("\rClosing Program in {0:00}", a);
+                System.Threading.Thread.Sleep(1000);
             }
-            Thread.Sleep(2000);
-            Environment.Exit(0);
+            Environment.Exit(1);
             Console.ReadKey();
         }
 
