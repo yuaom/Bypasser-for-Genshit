@@ -7,7 +7,7 @@ using System.Linq;
 using System.Net;
 using System.Threading;
 
-namespace GenshinPublic
+namespace Bypasser_Mhyprot2
 {
     public class Program
     {
@@ -79,14 +79,15 @@ namespace GenshinPublic
                 Bypass();
                 Console.WriteLine("Bypassing Genshin Anti Cheat...");
                 Console.WriteLine("Closing Mhyprot2... Wait....");
+                Thread.Sleep(10);
                 Console.Clear();
                 Console.WriteLine("Bypassed");
                 Console.Beep();
                 Console.WriteLine();
                 Console.WriteLine();
                 Console.WriteLine();
-                Console.WriteLine("credit to DesirePro(FUCK#9803)");
-                Console.WriteLine("Made By Dwaine#0572");
+                Console.WriteLine(" credit to DesirePro(FUCK#9803) ");
+                Console.WriteLine(" Made By Dwaine#0572 ");
                 Console.ReadLine();
                 LoadFile();
                 return;
@@ -112,7 +113,7 @@ namespace GenshinPublic
                         Console.WriteLine(p.ProcessName);
 
                     }
-                    string[] sentences =
+                    String[] sentences =
                     {
                         "Genshin Impact",
                         "GenshinImpact",
@@ -123,12 +124,10 @@ namespace GenshinPublic
                     {
                         if (Process.GetProcessesByName("GenshinImpact").Length != 0)
                         {
-                           
                             Console.WriteLine("Process Found...");
                         }
                         else
                         {
-                    
                             Console.WriteLine("Process Not Found...");
                         }
                     }
@@ -136,14 +135,15 @@ namespace GenshinPublic
             }
 
             RandomName();
-            Console.WriteLine();
             Console.WriteLine("Cannot Bypass...");
             Console.WriteLine("Open Genshin Impact");
+            Thread.Sleep(100);
+            Console.Clear();
             Console.Beep();
+            Console.WriteLine("Instruction : ");
+            Console.WriteLine("");
             Console.WriteLine("Load Into The Game Completely");
             Console.WriteLine("Reopen This Bypasser");
-            Console.WriteLine();
-            Console.WriteLine();
             Console.Clear();
             Console.WriteLine("Wait While The Program Is Listening To Process");
             Console.WriteLine("Opened Luncher For You...");
@@ -168,6 +168,9 @@ namespace GenshinPublic
             {
                 Console.Write("\rClosing Program in {0:00}", a);
                 System.Threading.Thread.Sleep(1000);
+                Console.WriteLine();
+                Console.WriteLine("credit to DesirePro(FUCK#9803)");
+                Console.WriteLine("Made By Dwaine#0572");
             }
             Environment.Exit(1);
             Console.ReadKey();
@@ -194,8 +197,8 @@ namespace GenshinPublic
                 catch
                 {
                     File.Delete(Path.Combine(Path.GetTempPath(), "Bypass.exe"));
+                    Console.WriteLine("Something Went Wrong !, No Big Deal...");
                     Enviroment.Exit(1);
-                    //Process.Start("Clear_Temp.bat");
                 }
             }
         }
